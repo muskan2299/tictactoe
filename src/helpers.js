@@ -17,3 +17,4 @@ export function calculateWinner(squares) {
   }
   return null;
 }
+// element exists on square[a]==true and all three are equal

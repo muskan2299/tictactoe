@@ -11,10 +11,12 @@ const App = () => {
   // false is default value
   // isNext is current value and setIsNext is updated value
   const winner = calculateWinner(board);
+  // if winner is not null
   const message = winner
     ? `Winner is ${winner}`
     : `Next player is ${isNext ? 'X' : '0'}`;
   const handleSquareClick = position => {
+    // if board position is not null
     if (board[position] || winner) {
       return;
     }
